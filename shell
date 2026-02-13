@@ -1,0 +1,122 @@
+📄 Shell Script Example (with comments)
+File name: system_info.sh
+#!/bin/bash # ----------------------------------------- 
+# Script Name : system_info.sh 
+# Purpose : Display basic system details
+ # Author : Vishal # Date : 2026-02-09 # ----------------------------------------- 
+# Print a welcome message echo "===== System Information Script =====" # Display current user echo "User: $(whoami)"
+ # Display hostname echo "Hostname: $(hostname)"
+ # Display current date and time echo "Date & Time: $(date)" 
+# Display system uptime echo "Uptime:" uptime # Display disk usage echo "Disk Usage:" df -h
+ # Display memory usage echo "Memory Usage:" free -h 
+# End of script echo "===== Script Finished Successfully ====="
+📝 Notes / Explanation (Important for Learning)
+1️⃣ Shebang
+#!/bin/bash
+
+Tells Linux which shell to use
+
+
+Always keep this on the first line
+
+
+/bin/bash = Bash shell path
+
+
+
+2️⃣ Comments
+# This is a comment
+
+Lines starting with # are ignored by the shell
+
+
+Used for documentation (very important in DevOps)
+
+
+
+3️⃣ echo
+echo "Hello"
+
+Prints output to the terminal
+
+
+Used for messages and logs
+
+
+
+4️⃣ Command Substitution
+$(command)
+
+Example:
+echo "User: $(whoami)"
+
+Runs a command and inserts its output
+
+
+Old style: `whoami` (not recommended)
+
+
+
+5️⃣ Common Linux Commands Used
+Command
+Purpose
+whoami
+Shows current user
+hostname
+System name
+date
+Current date & time
+uptime
+How long system is running
+df -h
+Disk usage (human readable)
+free -h
+Memory usage
+
+
+▶️ How to Run This Script
+Step 1: Create file
+nano system_info.sh
+
+Step 2: Give execute permission
+chmod +x system_info.sh
+
+Step 3: Run it
+./system_info.sh
+
+
+🔑 Key Shell Script Rules
+Script must be executable
+
+
+Commands run top to bottom
+
+
+Spaces matter (especially in conditions)
+
+
+Use comments to explain logic
+
+
+
+🚀 Next Level (What you can learn next)
+If you want, I can create documents for:
+Variables & user input
+
+
+If-else conditions
+
+
+Loops (for / while)
+
+
+CPU load testing script
+
+
+Real DevOps-style scripts (logs, monitoring, backups)
+
+
+Just tell me what you want next 😄
+
+
+
