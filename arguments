@@ -1,0 +1,66 @@
+What is an Argument in Script
+
+An argument is a value given to a script after the script name when executing it.
+
+Example command:
+
+./script.sh Vishal 25
+
+Here:
+
+Vishal = first argument
+
+25 = second argument
+
+Special Argument Variables
+Variable	Meaning
+$0	Script name
+$1	First argument
+$2	Second argument
+$3	Third argument
+$#	Total number of arguments
+$@	All arguments
+Example Script
+#!/bin/bash
+
+echo "Script name: $0"
+echo "First argument: $1"
+echo "Second argument: $2"
+
+Run the script:
+
+./script.sh Hello World
+
+Output:
+
+Script name: ./script.sh
+First argument: Hello
+Second argument: World
+Example 2 (Simple)
+
+Script:
+
+#!/bin/bash
+
+echo "My name is $1"
+echo "My city is $2"
+
+Run:
+
+./script.sh Vishal Delhi
+
+Output:
+
+My name is Vishal
+My city is Delhi
+
+✅ Short Definition:
+In Bash, arguments are values passed to a script from the command line when the script runs.
+
+If you want, I can also show you:
+
+Special variables in Bash ($?, $$, $*)
+
+Difference between variables and arguments in shell script
+
+5 simple shell script practice examples for DevOps beginners.
