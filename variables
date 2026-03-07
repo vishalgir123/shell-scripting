@@ -1,0 +1,84 @@
+What is a Variable in Script
+
+A variable is a name that stores data.
+
+Example: storing a name, number, or path.
+
+1️⃣ Creating a Variable
+
+Example:
+
+name="Vishal"
+
+Here:
+
+name = variable
+
+"Vishal" = value stored in variable
+
+2️⃣ Using a Variable
+
+Example:
+
+echo $name
+
+Output:
+
+Vishal
+
+$ is used to access the variable value.
+
+3️⃣ Simple Script Example
+#!/bin/bash
+
+name="Vishal"
+age=22
+
+echo "My name is $name"
+echo "My age is $age"
+
+Output:
+
+My name is Vishal
+My age is 22
+4️⃣ Taking Input from User
+
+Example:
+
+#!/bin/bash
+
+echo "Enter your name:"
+read name
+
+echo "Hello $name"
+Important Rules
+
+✔ No space when creating variable
+❌ name = Vishal (wrong)
+✔ name=Vishal (correct)
+
+✔ Use $ to access variable value
+
+Types of Variables in Shell Script
+
+User-defined variables
+Example:
+
+city="Delhi"
+
+System variables
+Example:
+
+echo $HOME
+echo $USER
+
+✅ Short Definition:
+A variable in a shell script is a name used to store data that can be used later in the script.
+
+If you want, I can also teach you:
+
+Shell script variables with 5 real examples
+
+Special variables in Bash like $0 $1 $2 $?
+
+Simple DevOps shell scripting interview questions.
