@@ -1,0 +1,61 @@
+What are Control Flow Statements?
+
+Control flow statements decide:
+
+Which command should run
+
+When a command should run
+
+How many times a command should run
+
+They help the script make decisions and repeat tasks automatically.
+
+Why We Use Control Flow Statements
+
+We use control flow statements to:
+
+1️⃣ Make decisions in scripts
+Example: check if a file exists.
+
+2️⃣ Repeat tasks automatically
+Example: create multiple directories.
+
+3️⃣ Control program execution
+Example: run different commands for different conditions.
+
+Example Without Control Flow
+echo "Hello"
+echo "Hello"
+echo "Hello"
+echo "Hello"
+
+This repeats the same command many times.
+
+Example With Control Flow (Loop)
+for i in 1 2 3 4
+do
+ echo "Hello"
+done
+
+Here the loop controls how many times the command runs.
+
+Common Control Flow Statements in Shell Script
+Statement	Purpose
+if	Check a condition
+if-else	Choose between two conditions
+case	Multiple conditions
+for	Repeat a task
+while	Run while condition is true
+until	Run until condition becomes true
+
+✅ Short Definition
+
+Control flow statements are commands in Bash that control the execution order of a script by making decisions or repeating tasks.
+
+If you want, I can also explain:
+
+Shell scripting control flow with real DevOps examples
+
+Difference between for, while, and until loops
+
+5 practical shell scripting tasks used in DevOps.
